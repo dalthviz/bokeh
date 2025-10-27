@@ -113,7 +113,7 @@
 }
 
 :host(:hover) {
-  background-color: rgba(192, 192, 192, 0.15);
+  background-color: var(--hover-color);
 }
 
 :host(:focus), :host(:focus-visible) {
@@ -130,7 +130,8 @@
 }
 
 .tool-button-border-active(@side) {
-  border-@{side}-color: var(--highlight-color);
+  border-@{side}-color: var(--active-border);
+  background-color: var(--active-bg);
 }
 
 :host(.bk-above) {
